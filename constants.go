@@ -2,13 +2,20 @@ package http
 
 const (
 	// ====================================================================
+	// ======================== Common Constants ==========================
+	// ====================================================================
+
+	// UserKey key in Context's Data for ID extracted from path parameter
+	UserKey string = "__user__"
+
+	// ====================================================================
 	// ===================== HTTP Context Constants =======================
 	// ====================================================================
 
-	// DataPathID key in Context's Data for ID extracted from path parameter
-	DataPathID string = "__path_id__"
-	// DataRequest key in Context's Data for raw request data
-	DataRequest string = "__request__"
-	// DataFilter key in Context's Data for filtering parameters
-	DataFilter string = "__filter__"
+	// PathIDKey key in Context's Data for ID extracted from path parameter
+	PathIDKey string = "__path_id__"
+	// RequestKey key in Context's Data for raw request data
+	RequestKey string = "__request__"
+	// FilterKey key in Context's Data for filtering parameters
+	FilterKey string = "__filter__"
 )

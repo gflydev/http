@@ -30,7 +30,7 @@ func ProcessPathID(c *core.Ctx) error {
 	}
 
 	// Store data into context
-	c.SetData(DataPathID, itemID)
+	c.SetData(PathIDKey, itemID)
 
 	return nil
 }
@@ -58,7 +58,7 @@ func ProcessFilter(c *core.Ctx) error {
 	}
 
 	// Store data into context.
-	c.SetData(DataFilter, filterDto)
+	c.SetData(FilterKey, filterDto)
 
 	return nil
 }
@@ -114,7 +114,7 @@ func ProcessUpdateData[T UpdateData](c *core.Ctx) error {
 	}
 
 	// Store data into context
-	c.SetData(DataRequest, requestData)
+	c.SetData(RequestKey, requestData)
 
 	return nil
 }
@@ -154,7 +154,7 @@ func ProcessData[T AddData](c *core.Ctx) error {
 	}
 
 	// Store data into context
-	c.SetData(DataRequest, requestData)
+	c.SetData(RequestKey, requestData)
 
 	return nil
 }
