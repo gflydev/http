@@ -8,6 +8,9 @@ const (
 	// UserKey key in Context's Data for ID extracted from path parameter
 	UserKey string = "__user__"
 
+	// DataKey key in Context's Data for processed/transformed request data
+	DataKey string = "__data__"
+
 	// ====================================================================
 	// ===================== HTTP Context Constants =======================
 	// ====================================================================
